@@ -1,0 +1,136 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Vinculación de Bootstrap para estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Título de la página -->
+    <title>CONTROLES PRUEBA</title>
+
+    <!-- Estilos personalizados en línea -->
+    <style>
+        /* Estilos para el contenedor principal */
+        .container {
+            border: 5px black; /* Borde del contenedor */
+            text-shadow: 4px 8px black; /* Sombra de texto */
+        }
+
+        /* Estilos para las etiquetas de formulario */
+        label {
+            color: red;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #333; /* Color de fondo */
+            color: #f70000; /* Color del texto */
+            text-align: center;
+            padding: 0%;
+            position: fixed; /* Fijar en la parte inferior de la pantalla */
+            bottom: 0;
+            width: 100%;
+            align-items: end;
+            margin-top: 20px; /* Espaciado superior */
+        }
+
+        /* Estilos para el título principal */
+        h1 {
+            padding: 35px;
+            font-size: 60px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        /* Estilos para la barra de navegación */
+        nav {
+            background-color: blueviolet;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(hda.jpg);">
+    <!-- Contenido principal de la página -->
+    <br>
+    <br>
+
+    <!-- Contenedor con diseño centrado -->
+    <div class="container">
+        <!-- Jumbotron con título principal -->
+        <div class="jumbotron position-absolute top-0 start-50 translate-middle-x">
+            <h1 style="color:red; text-shadow: 2px 2px black"><PRE>CONTACTANOS POR AQUI  <hr><hr><hr> </PRE></h1>
+        </div>
+    </div>
+
+    <!-- Formulario de contacto con diseño responsivo -->
+    <form class="row position-absolute top-50 start-50 translate-middle" style="background-image: url('fondo.jpg'); color:white; width: 60%; padding: 10px; border: 1px solid gray; border-radius: 6px;">
+        <!-- Campos del formulario -->
+        <div class="col-md-6">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="Nombre" placeholder="......." required>
+        </div>
+        <div class="col-md-6">
+            <label for="Apellidos" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="Apellidos" placeholder="......." required> 
+        </div>
+        <div class="col-md-6">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="correo" placeholder="@gmail.com" required>
+        </div>
+        <div class="col-md-3">
+            <label for="Telefono" class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="Telefono" required>
+        </div>
+        <p>'</p>
+        <div style="align-items: center; text-align: center; justify-content: center;">
+            <!-- Área de texto para el mensaje -->
+            <textarea rows="8" cols="50" placeholder="Contáctanos por aquí y te responderemos lo más pronto posible."></textarea>
+        </div>
+        <div style="align-items: center; text-align: center; justify-content: center;">
+            <!-- Botón de envío del formulario -->
+            <button style="background-color: aquamarine;" type="button">Enviar</button>
+        </div>
+    </form>
+
+    <!-- Pie de página con información de redes sociales y enlace de retorno al inicio -->
+    <footer>
+        <h2>Nuestras redes sociales</h2>
+        <hr>
+        <div class="redes">
+            <a href="https://www.facebook.com/?locale=es_LA"> <img src="face.png" width="100" height="100"></a>
+            <a href="https://www.instagram.com/"> <img src="ins.jfif" width="100" height="100"></a>
+            <a href="https://web.whatsapp.com"> <img src="what.jfif" width="100" height="100"></a>
+        </div>
+        <br>
+        <div>
+    <!-- Botón/enlace para volver al inicio -->
+    <a href="index.html" class="btn btn-secondary" style="border: 1px solid aqua; box-shadow: 1px 2px black;">
+      volver al inicio
+   </a>
+        </div>
+
+    
+    </footer>
+</body>
+</html>

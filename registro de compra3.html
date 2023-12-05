@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Título de la página -->
+    <title>CONTROLES PRUEBA</title>
+    <!-- Estilos CSS internos -->
+    <style>
+      .container{
+        border: 5px black;
+      }
+      label{
+        color: aqua;
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         text-shadow: 3px 4px black ;
+      }
+    </style>
+</head>
+<body style="background-image: url(fondo3.webp);">
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Encabezado con fondo y estilos -->
+        <div class="jumbotron position-absolute top-0 start-50 translate-middle-x">
+            <h1 style="color:red; text-shadow: 3px 2px black;"><pre>REGISTRO DE COMPRA</pre></h1>
+            <hr style="color: red;">
+            <hr style="color: red;">  
+        </div>
+    </div> 
+    <!-- Formulario de registro con estilos -->
+    <form class="row position-absolute top-50 start-50 translate-middle" style=" background-image: url('fondo.jpg'); color:white; width: 60%; padding: 10px; border: 1px solid gray; border-radius: 6px;">
+        <!-- Campos del formulario -->
+        <div class="col-md-6">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="Nombre" placeholder="......." required>
+        </div>
+
+        <div class="col-md-6">
+            <label for="Apellidos" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="Apellidos" placeholder="......." required> 
+        </div>
+
+        <div class="col-md-6">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="correo" placeholder="@gmail.com" required>
+        </div>
+        <div class="col-md-3">
+            <label for="Telefono" class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="Telefono" required>
+        </div>
+
+        <div class="col-8">
+            <label for="Numero de tarjeta" class="form-label">Numero de tarjeta</label>
+            <input type="text" class="form-control" id="Numero de tarjeta" placeholder="********" required>
+        </div>
+        <div class="col-6">
+            <label for="Nombre" class="form-label" >Nombre del propietario</label>
+            <input type="text" class="form-control" id="Nombre" placeholder="......." required>
+        </div>
+
+        <div class="col-md-2">
+            <label for="fecha de expiracion" class="form-label">Fecha de expiracion</label>
+            <input type="text" class="form-control" id="fecha de expiracion" placeholder="00/00" required>
+        </div>
+
+        <div class="col-md-2">
+            <label for="CVC" class="form-label">CVC</label>
+            <input type="text" class="form-control" id="CVC" placeholder="****" required>
+        </div>
+
+        <div class="col-12">
+            <label for="Direccion" class="form-label">Direccion</label>
+            <input type="text" class="form-control" id="Direccion" placeholder="Direccion" required>
+        </div>
+
+        <div class="col-12">
+            <label for="Direccion2" class="form-label">Direccion 2</label>
+            <input type="text" class="form-control" id="Direccion2" placeholder="Segunda Direccion">
+        </div>
+
+        <div class="col-md-6">
+            <label for="Ciudad" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="Ciudad" required>
+        </div>
+
+        <div class="col-md-4">
+            <label for="Provincia" class="form-label">Provincia</label>
+            <select id="Provincia" class="form-select" required>
+                <option selected>Beni</option>
+                <option>Pando</option>
+                <option>Santa Cruz</option>
+                <option>Cochabamba</option>
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label for="Pais" class="form-label">Pais</label>
+            <select id="Pais" class="form-select" required>
+                <option selected>Bolivia</option>
+                <option>Colombia</option>
+                <option>Brasil</option>
+                <option>Ecuador</option>
+                <option>Argentina</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label for="Codigo" class="form-label">Codigo Postal</label>
+            <input type="text" class="form-control" id="Codigo" placeholder="0000">
+        </div>
+        <br>
+        <br>
+        <!-- Controles de aceptación y notificación -->
+        <div class="form-check col-md-7">
+            <input class="form-check-input" type="radio" name="radio" id="radio" value="option1">
+            <label class="form-check-label" for="radio">
+                Acepto los <a href="terminos3.html" style="color:aqua; text-shadow: 1px 1px black;">Terminos y condiciones del servicio</a>
+            </label>
+        </div>
+        <div class="col-md-5">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="Check" checked>
+                <label class="form-check-label" for="Check">
+                    Enviarme notificaciones de nuevos productos
+                </label>
+            </div>
+        </div>
+        <!-- Botón de compra -->
+        <div class="col-12">
+            <button type="submit" class="btn btn-success" style="border: 1px solid aquamarine; box-shadow: 1px 2px black;">COMPRAR</button>
+        </div>
+        <!-- Botón de Volver al Catálogo -->
+<div class="col-12 mt-4">
+  <a href="poleras3.html" class="btn btn-secondary" style="border: 1px solid aqua; box-shadow: 1px 2px black;">
+      Volver al Catálogo
+  </a>
+</div>
+
+    </form>
+</body>
+</html>

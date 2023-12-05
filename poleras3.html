@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Estilos CSS internos -->
+    <style>
+      
+        body {
+           
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header {
+            background-image: url(hd.jpg);
+            color: #00fc54;
+            padding: 1em 0;
+            width: 20%;
+            text-align: center;
+            flex: 1;
+        }
+       
+
+        nav ul {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: flexbox;
+            margin-right: 20px;
+          align-items: center;
+          text-align: center;
+       padding: 100px;
+       font-size: 50px;
+        }
+
+        main {
+            background-image: url(fondo3.webp);
+            display: block;
+            flex-direction: column;
+            max-width: 1000px;
+            margin: 50px;
+            padding: 0 30px;
+            flex: 5;
+         
+
+
+        }
+
+        #productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            color: aqua;
+            text-shadow:3px 2px black ;
+            
+        }
+
+        .producto {
+            text-align: center;
+            margin: 20px;
+           
+        }
+
+        .producto img {
+            
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.1s ease-in-out;
+            border:4px solid black;
+        }
+
+        .producto:hover img {
+            transform: scale(1.1);
+        }
+      
+        #carrito {
+            background-image: url(hda.jpg);
+            padding: 10px;
+            margin: 0px;
+            flex: 1;
+        }
+
+       footer {
+            background-color: #333;
+            color: #f70000;
+            text-align: center;
+            padding: 0% ;
+            position: fixed;
+            bottom: 0;
+            width: 20%;
+            align-items: end;
+            margin-top: 20px;
+
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+      
+
+        button:hover {
+            background-color: #45a049;
+        }
+        #realizarCompra {
+            
+    position: fixed;
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none; /* para ocultar inicialmente el botón */
+    z-index: 1;
+}
+.redes {
+            display: flex;
+            justify-content: space-around;
+     
+        }
+ 
+
+        
+    </style>
+     <!-- Encabezado -->
+    <title>Tienda de Poleras</title>
+
+</head>
+<body>
+  
+    <header>
+         <!-- Barra de navegación -->
+        <h1>CATALOGO</h1>
+        <strong><hr></strong>
+        <nav>
+            <ul>
+                <li><a style="color: aqua; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; " href="index.html">Inicio</a></li>
+              
+              
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos">
+            <!-- Contenido de productos (se puede cargar dinámicamente desde una base de datos) -->
+            <div class="producto">
+                <img src="polera1.jpg" alt="Polera 1" height="150px" width="300px">
+                <h2>POLERA KIINKI</h2>
+                <p><STRong>POLERA MARCA KIINKI ORIGINAL</STRong></p>
+                <PRE>TALLA S</PRE>
+                <p class="precio">$20.99</p>
+                <button onclick="agregarAlCarrito('Polera 1',20.99,'POLERA MARCA KIINKI ORIGINAL')">Agregar al Carrito</button>
+            </div>
+            <section id="productos">
+                <!-- Contenido de productos (se puede cargar dinámicamente desde una base de datos) -->
+                <div class="producto">
+                    <img src="polera2.jpg" alt="no soportado" height="150px" width="300px">
+                    <h2>POLERA KIINKI</h2>
+                    <p><STRong>POLERA MARCA KIINKI ORIGINAL COLOR NEGRO</STRong></p>
+                    <PRE>TALLA L</PRE>
+                    <p class="precio">$24.99</p>
+                    <button onclick="agregarAlCarrito('Polera 1',24.99,'POLERA MARCA KIINKI ORIGINAL ')">Agregar al Carrito</button>
+                </div>
+                <!-- Repite para otros productos -->
+            </section>
+            <section id="productos">
+                <!-- Contenido de productos (se puede cargar dinámicamente desde una base de datos) -->
+                <div class="producto">
+                    <img src="polera3.jpg" alt="no soportado" height="100px" width="300px">
+                    <h2>POLERA SEVEN ZERO </h2>
+                    <p><STRong>POLERA SEVEN ZERO ORIGINAL </STRong></p>
+                    <PRE>TALLA S</PRE>
+                    <p class="precio">$33.99</p>
+                    <button onclick="agregarAlCarrito('Polera 1',33.99,'POLERA MARCA SEVEN ZERO FIVE ORIGINAL')">Agregar al Carrito</button>
+                </div>
+
+                <section id="productos">
+                    <!-- Contenido de productos (se puede cargar dinámicamente desde una base de datos) -->
+                    <section id="productos">
+                        <!-- Contenido de productos (se puede cargar dinámicamente desde una base de datos) -->
+                        <div class="producto">
+                            <img src="polera 4.jpg" alt="Polera 1" height="350px" width="400px">
+                            <h2>POLERA GALÁCTICA</h2>
+                            <p><strong>POLERA DE LA GALAXIA LEJANA</strong></p>
+                            <pre>TALLA S</pre>
+                            <p class="precio">$10.99</p>
+                            <button onclick="agregarAlCarrito('Polera Galáctica', 10.99, 'Polera de la Galaxia Lejana')">Agregar al Carrito</button>
+                        </div>
+                    
+                        <section id="productos">
+                            <!-- Contenido de productos (se puede cargar dinámicamente desde una base de datos) -->
+                            <div class="producto">
+                                <img src="polera 5.jpg" alt="Polera 1" height="150px" width="300px">
+                                <h2>POLERA NOCTURNA</h2>
+                                <p><strong>POLERA MISTERIOSA PARA NOCHES INOLVIDABLES</strong></p>
+                                <pre>TALLA S</pre>
+                                <p class="precio">$40.99</p>
+                                <button onclick="agregarAlCarrito('Polera Nocturna', 40.99, 'Polera Misteriosa para Noches Inolvidables')">Agregar al Carrito</button>
+                            </div>
+                            <section id="productos">
+                                <!-- Contenido de productos (se puede cargar dinámicamente desde una base de datos) -->
+                                <div class="producto">
+                                    <img src="polera 6.jpg" alt="Polera 1" height="150px" width="300px">
+                                    <h2>POLERA AURORA</h2>
+                                    <p><strong>POLERA QUE BRILLA COMO LA AURORA BOREAL</strong></p>
+                                    <pre>TALLA S</pre>
+                                    <p class="precio">$50.99</p>
+                                    <button onclick="agregarAlCarrito('Polera Aurora', 50.99, 'Polera que Brilla como la Aurora Boreal')">Agregar al Carrito</button>
+                                </div>
+                                <section id="productos">
+                                    <!-- Contenido de productos (se puede cargar dinámicamente desde una base de datos) -->
+                                    <div class="producto">
+                                        <img src="polera 7.jpg" alt="Polera 1" height="150px" width="300px">
+                                        <h2>POLERA VINTAGE</h2>
+                                        <p><strong>POLERA CLÁSICA Y ESTILOSA</strong></p>
+                                        <pre>TALLA S</pre>
+                                        <p class="precio">$40.99</p>
+                                        <button onclick="agregarAlCarrito('Polera Vintage', 40.99, 'Polera Clásica y Estilosa')">Agregar al Carrito</button>
+                                    </div>
+                                    <section id="productos">
+                                        <!-- Contenido de productos (se puede cargar dinámicamente desde una base de datos) -->
+                                        <div class="producto">
+                                            <img src="polera 8.jpg" alt="Polera 1" height="150px" width="300px">
+                                            <h2>POLERA ECLÉCTICA</h2>
+                                            <p><strong>POLERA CON UN TOQUE ECLÉCTICO</strong></p>
+                                            <pre>TALLA S</pre>
+                                            <p class="precio">$70.99</p>
+                                            <button onclick="agregarAlCarrito('Polera Ecléctica', 70.99, 'Polera con un Toque Ecléctico')">Agregar al Carrito</button>
+                                        </div>
+                                        <section id="productos">
+                                            <!-- Contenido de productos (se puede cargar dinámicamente desde una base de datos) -->
+                                            <div class="producto">
+                                                <img src="polera 11.jpg" alt="Polera 1" height="150px" width="300px">
+                                                <h2>POLERA LUMINARIA</h2>
+                                                <p><strong>POLERA QUE BRILLA EN LA OSCURIDAD</strong></p>
+                                                <pre>TALLA S</pre>
+                                                <p class="precio">$90.99</p>
+                                                <button onclick="agregarAlCarrito('Polera Luminaria', 90.99, 'Polera que Brilla en la Oscuridad')">Agregar al Carrito</button>
+                                            </div>
+                                            <section id="productos">
+                                                <!-- Contenido de productos (se puede cargar dinámicamente desde una base de datos) -->
+                                                <div class="producto">
+                                                    <img src="polera 9.jpg" alt="Polera 1" height="150px" width="300px">
+                                                    <h2>POLERA CASUAL</h2>
+                                                    <p><strong>POLERA PARA OCASIONES RELAJADAS</strong></p>
+                                                    <pre>TALLA S</pre>
+                                                    <p class="precio">$25.99</p>
+                                                    <button onclick="agregarAlCarrito('Polera Casual', 25.99, 'Polera para Ocasiones Relajadas')">Agregar al Carrito</button>
+                                                </div>
+                                                <section id="productos">
+                                                    <!-- Contenido de productos (se puede cargar dinámicamente desde una base de datos) -->
+                                                    <div class="producto">
+                                                        <img src="polera 10.jpg" alt="Polera 1" height="150px" width="300px">
+                                                        <h2>POLERA FESTIVA</h2>
+                                                        <p><strong>POLERA PARA CELEBRACIONES ALEGRES</strong></p>
+                                                        <pre>TALLA S</pre>
+                                                        <p class="precio">$44.99</p>
+                                                        <button onclick="agregarAlCarrito('Polera Festiva', 44.99, 'Polera para Celebraciones Alegres')">Agregar al Carrito</button>
+                                                    </div>
+                           
+                    
+                                                
+            
+            
+                                            
+    
+          
+        </section>
+    </main>
+
+    <!-- Carrito de compras -->
+    <div id="carrito">
+        <h2 style="color:aqua;">Carrito de Compras:</h2>
+        <!-- Contenido del carrito se mostrará aquí -->
+    </div>
+
+    <!-- Botón de realizar compra -->
+    <a href="registro de compra3.html"><button id="realizarCompra" onclick="realizarCompra()">Realizar Compra</button></a>
+
+    <!-- Pie de página -->
+    <footer>
+        <h2>Nuestras redes sociales</h2>
+        <hr>
+        <div class="redes">
+            <a href="https://www.facebook.com/?locale=es_LA"> <img src="face.png" width="100" height="100" ></a>
+            <a href="https://www.instagram.com/"> <img src="ins.jfif" width="100" height="100" ></a>
+            <a href="https://web.whatsapp.com"> <img src="what.jfif" width="100" height="100" ></a>
+        </div>
+    </footer>
+
+    <!-- Script para la funcionalidad del carrito -->
+    <script>
+        let carrito = [];
+
+        function agregarAlCarrito(producto, precio, nombre) {
+            carrito.push({ producto: nombre, precio });
+            actualizarCarrito();
+        }
+
+        function eliminarDelCarrito(index) {
+            carrito.splice(index, 1);
+            actualizarCarrito();
+        }
+
+        function actualizarCarrito() {
+            const carritoSection = document.getElementById("carrito");
+            carritoSection.innerHTML = "<h2>Carrito de Compras:</h2>"; // Limpiar contenido anterior
+
+            console.log("Carrito de Compras:");
+            carrito.forEach((item, index) => {
+                console.log(`${item.producto} - $${item.precio}`);
+
+                // Mostrar en la sección del carrito
+                const nuevoItem = document.createElement("div");
+                nuevoItem.innerHTML = `${item.producto} - $${item.precio}
+                    <button class="delete" onclick="eliminarDelCarrito(${index})">Eliminar producto</button>`;
+                carritoSection.appendChild(nuevoItem);
+            });
+
+            // Mostrar el botón de realizar compra solo si hay elementos en el carrito
+            const realizarCompraBtn = document.getElementById("realizarCompra");
+            realizarCompraBtn.style.display = carrito.length > 0 ? "block" : "none";
+        }
+    </script>
+
+    
+</body>
+</html>
+
+
